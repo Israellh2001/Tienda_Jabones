@@ -1,0 +1,17 @@
+var dbRef = firebase.database().ref().child("GENERAL");
+            dbRef.on("child_added",function(snapshot){
+
+                console.log("Se añadio el elemento ",snapshot.val());
+            var articulo=document.createElement("article");
+            var data=snapshot.val();
+
+            var img_url="https://firebasestorage.googleapis.com/v0/b/fit-life-a5725.appspot.com/o/"+data.IMG_ID+"?alt=media&token";
+
+            var contenido="<div class='parent_articulo'><div class='barra_titulo'><a style='color:#fff' class='titulo_articulo' href=''>"
+            +data.TITULO+"</a></div><div><img src="+img_url+" class='imagen'><div class='campo_texto'><p class='texto' style='color:#424242'>"
+            +data.CONTENIDO+"</p></div></div></div>";
+
+            articulo.innerHTML=contenido;
+            document.getElementById("divi").appendChild(articulo);
+
+        });
