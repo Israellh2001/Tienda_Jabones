@@ -1,0 +1,15 @@
+<script>
+        // cargar datos desde firebase
+        var dbRef = firebase.database().ref().child("Producto");
+            dbRef.on("child_added",function(snapshot){
+
+                console.log(snapshot.val());
+            var articulo=document.createElement("article");
+            var data=snapshot.val();
+                
+var contenido="<div class='contenedor'><div class='img'><img src='https://firebasestorage.googleapis.com/v0/b/shampoo-matizados.appspot.com/o/Drugstore_Men_shampoo-512.png?alt=media&token' width='150' height='150'></div><div class='title'><p>"+data.Nombre+"</p></div><div class='precio'><p>"+data.Precio+"</p></div><div class='caracteristicas'><p>"+data.Contenido+"</p></div></div>";
+
+            articulo.innerHTML=contenido;
+            document.getElementById("divi").appendChild(articulo);
+});
+</script>
