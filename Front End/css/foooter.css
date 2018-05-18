@@ -1,0 +1,131 @@
+footer{
+    width: 100%;
+    color:#fff;
+    font-family: "Quicksand",sans-serif;
+}
+.footer-container {
+    width:100%;
+    background:#323A3F;
+    color:#fff;
+    padding: 0 20%;
+}
+.footer-main{
+    width: 98%;
+    max-width:1000px;
+    margin: auto;
+    padding: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-main .footer-columna{
+    width: calc(100%/2);
+    text-align: justify;
+}
+
+.footer-main .footer-columna:nth-child(1){
+    padding: 0 0px;
+}
+
+.footer-main .footer-columna h3 {
+    font-size: 32px;
+    color: #45ADA8;
+    margin-bottom: 20px;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+
+.footer-main .footer-columna span p {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Redes 0 */
+.footer-copy-redes {
+    width: 100%;
+    background: #1C1D23;
+}
+.main-copy-redes {
+    width: 98%;
+    max-width: 1000px;
+    padding: 15px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+.main-copy-redes .footer-copy-redes {
+    width: 70%;
+    color: #1C1D23;
+}
+.main-copy-redes .footer-redes{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-copy-redes .footer-redes a {
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color:#182828;
+    text-align: center;
+    font-size: 20px;
+}
+@media screen and (max-width: 750px){
+  .info-main {
+    padding: 30px 100px;
+  }
+  .footer-main{
+    width:92%;
+  }
+  .footer-main .footer-columna {
+    padding: 0 10px;
+  }
+  .footer-main .footer-columna h3 {
+    font-size: 28px;
+  }
+  .footer-main .footer-columna p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .info-main {
+    padding: 30px 30px;
+  }
+  .info-main h3 {
+    font-size: 30px;
+  }
+  .footer-main{
+    width:88%;
+    padding: 10px 0;
+  }
+  .footer-main .footer-columna {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .footer-main .footer-columna h3{
+    margin-bottom: 5px;
+  }
+  .footer-main .footer-columna span{
+    display: block;
+  }
+  .main-copy-redes .footer-copy{
+    width: 97%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .main-copy-redes .footer-redes{
+    width: 80%;
+    margin: auto;
+  }
+}
