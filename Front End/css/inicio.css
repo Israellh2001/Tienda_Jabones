@@ -1,0 +1,52 @@
+.cont{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#desc{
+  width: 80%;
+  background: white;
+}
+
+#desc .parrafo p{
+  padding: 2%;
+}
+
+#desc .parrafo .titulo{
+  padding: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+#titulo{
+  background: #00bfb4;
+  font-size: 20px;
+  width:30%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+#titulo h2{
+  text-align: center;
+  color:white;
+}
+
+.seccion1{
+  margin-right: 3%;
+  width:47%;
+}
+
+#desc{
+  widht:100%;
+}
+
+.parrafo .titulo{
+  text-align: left;
+}
+
+@media screen and (max-width:700px){
+  .seccion1{
+    width:100%;
+  }
+}

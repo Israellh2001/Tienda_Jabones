@@ -1,0 +1,157 @@
+.iconos{
+  margin: 2%;
+  margin-left: 10%;
+  margin-top: 1%;
+  width:5%;
+  height: auto;
+  float: left;
+  position: fixed;
+  background-color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.contenido{
+  margin-left: 15%;
+}
+.iconos a{
+  padding-left: 0;
+  margin: 0;
+}
+.iconos i{
+  font-size: 280%;
+  color:#45ada8;
+  padding-top: 7%;
+}
+
+.iconos i:hover{
+  color:#2f7673;
+}
+
+.seccion1{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.galeria{
+  width:90%;
+  background-color: white;
+  padding:1.5%;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #b2b2b2;
+}
+
+.foto {
+    border: 1px solid #ccc;
+}
+
+.foto:hover {
+    border: 1px solid #777;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+}
+
+.pie {
+  font-size: 80%;
+    padding: 5%;
+    text-align: center;
+}
+
+.tarjeta {
+    padding: 0 .5%;
+    float: left;
+    width: 16.66%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Parrafos */
+.seccion1 .parrafo .area{
+  float: right;
+  width:40%;
+  margin:2%;
+}
+
+.seccion1 .parrafo .titulo{
+  padding: 1px;
+}
+
+.titulo h2{
+  text-align: center;
+}
+
+.seccion1 .parrafo p{
+  padding:2%;
+}
+
+/* Colores de áreas */
+
+#g{
+  background-color: #FFB041;
+}
+
+#rh{
+  background-color: #FF8886;
+}
+
+#f{
+  background-color: #9D191F;
+}
+
+#m{
+  background-color: #6CAAFF;
+}
+
+#c{
+  background-color: #BA5AA3;
+}
+
+#p{
+  background-color: #5A5A5A;
+}
+
+#s{
+  background-color: #70C340;
+}
+
+@media only screen and (max-width: 780px) {
+  .iconos{
+    visibility: hidden;
+  }
+
+  .contenido{
+    margin: auto;
+  }
+  .tarjeta {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .seccion1 .parrafo .area{
+    float: none;
+    width:65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .tarjeta {
+    width: 85%;
+    margin: 0 7.5% ;
+  }
+  .seccion1 .parrafo .area{
+    float: none;
+    width:85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+}

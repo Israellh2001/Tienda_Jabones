@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shampoo</title>
+    <title>Natural Beauty</title>
+    <link rel="icon" href="img/icono.ico">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/foooter.css">
     <link rel="stylesheet" href="css/areas.css">
+    <script src="js/smooth-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,6 +19,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+      speed: 700, // Integer. How fast to complete the scroll in milliseconds
+      offset: 145, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+      easing: 'easeInOutCubic', // Easing pattern to use
+      customEasing: function (time) {
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+      },
+
+      before: function (anchor, toggle) {}, // Callback to run before scroll
+      after: function (anchor, toggle) {} // Callback to run after scroll
+      });
+    </script>
 
     <div class="Pagina">
       <!-- Barra de navegación -->
@@ -29,8 +49,9 @@
         <div class="menu">
           <ul>
             <li><a href="index.html" class="link">Inicio</a></li>
-            <li><a href="ventas.html" class="link">Productos</a></li>
-            <li><a href="areas.html" class="link">Áreas de trabajo</a></li>
+            <li><a href="ventajas.html" class="link">Producto</a></li>
+            <li><a href="ventas.php" class="link">Tienda</a></li>
+            <li><a href="areas.html" class="link">Departamentos</a></li>
             <li><a href="nosotros.html" class="link">Nosotros</a></li>
           </ul>
         </div>
@@ -39,65 +60,449 @@
       <br><br>
       <br><br><br>
 
+      <div class="iconos"><center>
+        <a data-scroll  href="#g"><i class="fas fa-money-check-alt fa-2x"></i></a>
+        <a data-scroll  href="#f"><i class="fas fa-money-check-alt fa-2x"></i></a>
+        <a data-scroll  href="#p"><i class="fas fa-truck fa-2x"></i></a>
+        <a data-scroll  href="#s"><i class="fas fa-code fa-2x"></i></a>
+        <a data-scroll  href="#m"><i class="fas fa-clipboard-list fa-2x"></i></a>
+        <a data-scroll  href="#rh"><i class="fas fa-address-book fa-2x"></i></a>
+        <a data-scroll  href="#c"><i class="fas fa-money-check-alt fa-2x"></i></a></center>
+      </div>
       <!-- Contenido -->
       <div class="contenido" id="indice">
 
+        <!-- Sección 1: Gerencia -->
         <div class="seccion1">
-          <div class="cuadrado">
-            <img src="img/Camera_Icon.jpg" alt="Producto">
-          </div>
+
           <div class="parrafo">
-            <div class="titulo">
-              <h2>Título</h2>
+            <div class="titulo" id="g">
+              <h2>Gerencia</h2>
             </div>
+            <img src="img/areas/gerencia.jpg" class="area">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Es el proceso que implica la coordinación de todos los recursos disponibles
+              en una organización (humano, físico, tecnológico, financiero), para
+              que a través de los distintos procesos de planificación, organización,
+              dirección y control se logren los objetivos que se deseen alcanzar
+              dentro de la empresa.<br><br>
+              La existencia de una gerencia es de vital importancia ya que permite
+              planificar, organizar, dirigir y controlar cada uno de los procesos
+              y de las actividades que se desarrollan dentro la empresa.
+
             </p>
           </div>
+
+          <center>
+            <div class="galeria">
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/anonimo.jpg" alt="Area" width="300" height="200">
+                  <div class="pie">Zabelly - Gerente General</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/gerencia/Montse_SubGerente.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Montse - Subgerente</div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </center>
         </div>
 
+        <!-- Sección 2: Recuersos Humanos -->
         <div class="seccion1">
-          <div class="cuadrado">
-            <img src="img/Camera_Icon.jpg" alt="Producto">
-          </div>
+
           <div class="parrafo">
-            <div class="titulo">
-              <h2>Título</h2>
+            <div class="titulo" id="rh">
+              <h2>Recursos Humanos</h2>
             </div>
+            <img src="img/areas/recursosh.jpg" class="area">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              En el ámbito de la organización interna de la empresa, el departamento
+              de recursos humanos es el responsable de la gestión de los recursos
+              humanos de la organización, y se encuentra formado por un conjunto
+              de personas que se organizan en la empresa para conseguir los siguientes
+              objetivos: seleccionar y formar a las personas que la empresa necesita,
+              proporcionar a los trabajadores los medios necesarios para que puedan
+              ejercer su trabajo e intentar que el trabajador satisfaga sus necesidades.
             </p>
           </div>
+
+          <center>
+            <div class="galeria">
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/rh/Erydani_RH.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Eridani Martínez Perez - Gerente</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/anonimo.jpg" alt="Area" width="300" height="200">
+                  <div class="pie">Yulisa - Secretaria</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/rh/Ismael_RH.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Ismael Cárdenas Marín - Contrataciones y Empleo</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/rh/Lilia_RH.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Lili Andrea Sandoval González - Capacitación</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/rh/Brenda_RH.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Brenda Jaqueline Hernández Vallín - Sueldos</div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </center>
         </div>
 
+        <!-- Sección 3: Finanzas -->
         <div class="seccion1">
-          <div class="cuadrado">
-            <img src="img/Camera_Icon.jpg" alt="Producto">
-          </div>
+
           <div class="parrafo">
-            <div class="titulo">
-              <h2>Título</h2>
+            <div class="titulo" id="f">
+              <h2>Finanzas</h2>
             </div>
+            <img src="img/areas/finanzas.jpg" class="area">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              El área de finanzas se encarga principalmente de administrar los
+              recursos monetarios con los que operamos, así como en pocas palabras
+              vemos la mejor manera de obtener el dinero y la manera más eficiente
+              de gastarlo en la empresa.<br>
+              El departamento financiero es el combustible necesario para que el
+              negocio garantice su continuidad y sostenibilidad en el tiempo.
+
             </p>
           </div>
+
+          <center>
+            <div class="galeria">
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/anonimo.jpg" alt="Area" width="300" height="200">
+                  <div class="pie">Alejandro - Gerente</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/finanzas/Michelle_Fin.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Michelle Alejandra Novoa Barragán - Secretaria</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/finanzas/Brenda_Fin.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Brenda Lorena del León Muñoz - Abogada Fiscal</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/finanzas/Alma_Fin.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Alma Herminia Salas Valdéz - Auditoria Interna</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/finanzas/Esperanza_Fin.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Esperanza Pérez Esparza - Control Financiero</div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </center>
         </div>
+
+        <!-- Sección 4: Mercadotecnia -->
+        <div class="seccion1">
+
+          <div class="parrafo">
+            <div class="titulo" id="m">
+              <h2>Mercadotecnia</h2>
+            </div>
+            <img src="img/areas/mercadotecnia.jpg" class="area">
+            <p>
+              Es el área que se enfoca en crear la publicidad para que se dé a
+              conocer el producto y gracias a eso hace que la empresa crezca más
+              rápido. Se encarga llamar la atención del público con un producto
+              nuevo e innovador, cabe notar que es un área de mucha creatividad
+              ya que tiene que crear un logo llamativo igual que un slogan, entre
+              otras cosas, para que se conozca el producto. Su principal objetivo
+              es identificar las necesidades del consumidor y conceptuarlas, para
+              elaborar un producto y/o servicio que satisfaga las mismas promoviendo
+              el intercambio de los mismos con los clientes, a cambio de una
+              utilidad o beneficio.
+            </p>
+          </div>
+
+          <center>
+            <div class="galeria">
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/mercadotecnia/Dulce_Merc.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Dulce María Chavez Hernández - Gerente</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/anonimo.jpg" alt="Area" width="300" height="200">
+                  <div class="pie">Fernanda - Secretaria</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/anonimo.jpg" alt="Area" width="300" height="200">
+                  <div class="pie">Ariana - Ventas</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/anonimo.jpg" alt="Area" width="300" height="200">
+                  <div class="pie">Nayelly - Marca y Producto</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/mercadotecnia/Maryana_Merc.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Mariana Medina Andrade - Diseño Gráfico</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/mercadotecnia/Valeria_Merc.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Valeria Ortíz López - Publicista</div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </center>
+        </div>
+
+        <!-- Sección 5: Compras -->
+        <div class="seccion1">
+
+          <div class="parrafo">
+            <div class="titulo" id="c">
+              <h2>Compras</h2>
+            </div>
+            <img src="img/areas/compras.jpg" class="area">
+            <p>
+              Toda empresa tiene un departamento de compras, en él recaen las
+              responsabilidades de adquirir los insumos (materias primas, partes,
+              herramientas, artículos de oficina y equipo) indispensables para
+              la producción de bienes y servicios, poniendo mucha atención para
+              conseguirlos. Los recursos materiales se surten a los departamentos
+              que lo requieran.
+            </p>
+          </div>
+
+          <center>
+            <div class="galeria">
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/compras/Sonia_Comp.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Sonia Chávez Alba - Gerente</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/compras/Sharon_Comp.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Sharon Denisse López Rodríguez - Auxiliar Administrativo</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/compras/Fatima_Comp.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Fátima Guadalupe Chavez Martínez - Aseguramiento C.S.I.</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/compras/Isabel_Comp.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Isabel Herrera Rojas - Control de inventarios</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/compras/Alondra_Comp.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Alondra Jímenez Torres - Comprador de Materia Prima</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/compras/Araceli_Comp.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Araceli Villalobos Rojas - Comprador I. de oficinas</div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </center>
+        </div>
+
+        <!-- Sección 6: Producción -->
+        <div class="seccion1">
+
+          <div class="parrafo">
+            <div class="titulo" id="p">
+              <h2>Producción</h2>
+            </div>
+            <img src="img/areas/produccion.jpg" class="area">
+            <p>
+              El departamento de producción es el área que tiene como función
+              principal la transformación de materias primas en productos finales. <br>
+              La fabricación de un producto eficaz, de buena calidad y cumpla con
+              satisfacer a el cliente, que es lo más importante en la empresa.
+            </p>
+          </div>
+
+          <center>
+            <div class="galeria">
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/produccion/Xareni_Prod.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Xareni Michelle Ramirez Zepeda - Gerente</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/produccion/Liliana_Prod.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Liliana Ruíz Méndez - Secretaria</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/anonimo.jpg" alt="Area" width="300" height="200">
+                  <div class="pie">Lizbeth - Ingeniería</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/produccion/Jocelyne_Prod.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Jocelyne Noemi Nungaray Vázquez - Control de Cálidad</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/produccion/Silvia_Prod.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Silvia Paola Cajero Castañeda - Mantenimiento</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/produccion/Mariana_Prod.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Mariana Aurora Salgado Sánchez - Fabricación</div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </center>
+        </div>
+
+        <!-- Sección 7: Sistemas -->
+        <div class="seccion1">
+
+          <div class="parrafo">
+            <div class="titulo" id="s">
+              <h2>Sistemas</h2>
+            </div>
+            <img src="img/areas/sistemas.jpg" class="area">
+            <p>
+              Gran parte de la actividad que desarrollamos en el Área de Sistemas
+              corresponde a la administración de los sistemas operativos y al
+              soporte a los usuarios, con los objetivos de garantizar la continuidad
+              del funcionamiento de las máquinas y del "software" al máximo rendimiento,
+              y facilitar su utilización a todos los sectores de la comunidad de la Empresa.<br><br>
+              Esta labor se desarrolla en tareas como estas:<br>
+              • Describir las tecnologías de la información que tiene la empresa<br>
+              • Describir y explicar el uso de los "software” que utiliza dentro de la empresa<br>
+              • Describir y explicar quién se encarga del manejo de la información dentro de la empresa
+
+            </p>
+          </div>
+
+          <center>
+            <div class="galeria">
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/sistemas/Antonio_Sist.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Antonio González Gómez - Gerente</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/sistemas/Jocelyn_Sist.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Salma Jocelyn Chávez Damian - Secretaria</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/sistemas/Axel_Sist.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Axel Jiménez - Programador</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/sistemas/Brandon_Sist.jpeg" alt="Area" width="300" height="200">
+                  <div class="pie">Brandon Zamora Arredondo - Soporte Técnico</div>
+                </div>
+              </div>
+
+              <div class="tarjeta">
+                <div class="foto">
+                  <img src="img/Alumnas/anonimo.jpg" alt="Area" width="300" height="200">
+                  <div class="pie">Sofia Alejandra Reyes Ledesma  - Mantenimiento</div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </center>
+        </div>
+
 
       </div>
     </div>
@@ -125,10 +530,11 @@
       });
     </script>
 
+
     <script type="text/javascript">
 
-    $(document).ready(function(){
-      for(var i=1;i<=6;i++){
+      $(document).ready(function(){
+        for(var i=1;i<=8;i++){
           console.log(i);
           var text = '.seccion1:nth-child('+i+')';
           var text2 = '.seccion1:nth-child('+i+') .cuadrado';
@@ -136,12 +542,20 @@
           console.log("Alto: "+alto);
           console.log(text);
           $(text2).height(alto);
-          $(window).resize(function(){
-            alto = $(text).innerHeight();
-            console.log("Alto: "+alto);
-            $(text2).height(alto);
-          })
+
         }
+        $(window).resize(function(){
+          for(var i=1;i<=8;i++){
+            console.log(i);
+            var text = '.seccion1:nth-child('+i+')';
+            var text2 = '.seccion1:nth-child('+i+') .cuadrado';
+            var alto = $(text).innerHeight();
+            console.log("Alto: "+alto);
+            console.log(text);
+            $(text2).height(alto);
+
+          }
+        });
       });
 
     </script>
