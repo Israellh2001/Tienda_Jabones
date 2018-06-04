@@ -3,9 +3,15 @@
   flex-wrap: wrap;
 }
 
+.parrafo{
+  border-radius: 20px;
+}
+
 #desc{
   width: 80%;
   background: white;
+  border-radius: 20px;
+  overflow:hidden;
 }
 
 #desc .parrafo p{
@@ -19,6 +25,7 @@
 }
 
 #titulo{
+  border-radius: 20px;
   background: #00bfb4;
   font-size: 20px;
   width:30%;

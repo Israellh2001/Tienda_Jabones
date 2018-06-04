@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Natural Beauty</title>
+    <title>Sakura Company</title>
     <link rel="icon" href="img/icono.ico">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/slider.css">
@@ -25,7 +25,7 @@
           <i class="fa fa-bars fa-2x"></i>
         </div>
         <div class="logo">
-          <b>Natural Beauty</b>
+          <b>Sakura Company</b>
         </div>
         <div class="menu">
           <ul>
@@ -40,13 +40,12 @@
 
 
       <!-- slider -->
-      <div class="container">
+      <div class="container" id="anuncios">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
 
           <!-- Wrapper for slides -->
@@ -57,10 +56,6 @@
 
             <div class="item">
               <img src="img/slide2.png" alt="Chicago" style="width:100%;">
-            </div>
-
-            <div class="item">
-              <img src="img/slide3.png" alt="New york" style="width:100%;">
             </div>
           </div>
 
@@ -84,14 +79,15 @@
         <center><div id="desc">
           <div class="parrafo">
             <div class="titulo">
-              <h2>Honey Clean</h2>
+              <h2>Natural Beauty</h2>
             </div>
             <p>
               Es un producto hecho a base de extractos herbales cuyo principal
-              objetivo es reparar y ayudar a mantener el color del cabello pintado,
-              pues se encarga de matizarlo y neutralizarlo manteniendo la prolongación
-              del tono a pesar del paso del tiempo, sin que aparezcan esos tonos
-              y reflejos indeseables, al mirarte al espejo.
+              objetivo es reparar y ayudar a mantener un buen cuidado del cabello.
+              Existen algunas variaciones del prooducto con diferentes objetivos
+              cada uno, por ejemplo, rejuvenecer el cabello, ayudar a disminuir
+              el maltrato de cabello por agentes químicos, ayudar al crecimiento
+              de cabello hasta un shampoo especializado en cabello graso.
             </p>
           </div>
         </div></center>
@@ -211,6 +207,9 @@
     <!-- Menu responsivo -->
     <script type="text/javascript">
       $(document).ready(function(){
+        $('.logo').addClass('white');
+        $('a').addClass('white');
+        $('a::hover').addClass('white');
         $(".menuIcon").on("click",function(){
           $("nav ul").toggleClass("showing");
         });
@@ -220,13 +219,12 @@
         if($(window).scrollTop()){
           $('.logo').addClass('white');
           $('nav').addClass('black');
+          $('nav').addClass('black2');
           $('a').addClass('white');
           $('a::hover').addClass('white');
         }else{
-          $('.logo').removeClass('white');
           $('nav').removeClass('black');
-          $('a').removeClass('white');
-          $('a::hover').removeClass('white');
+          $('nav').removeClass('black2');
         }
       });
     </script>
@@ -279,13 +277,16 @@
         <div class="footer-main">
           <div class="footer-columna">
             <h3><b>Contáctanos</b></h3>
-            <span class="fa fa-map-marker"><p>Prototipo</p></span><br>
+            <span class="fa fa-map-marker"><p>Av Perseo 301, Primo Verdad</p><p>Inegi, 20267 Aguascalientes, Ags.</p></span><br>
             <span class="fa fa-phone"><p>(+51) 449 278 2024</p></span><br>
-            <span class="fa fa-envelope"><p>info@honeyclean.com</p></span>
+            <span class="fa fa-envelope"><p>info@sakuracompany.com</p></span>
           </div>
           <div class="footer-columna">
             <h3>Sakura Company</h3>
-            <p>Sakura Company es una empresa...</p>
+            <p>Nuestra empresa trabaja día con día en la creación e innovación de
+              productos de higiene personal hechos 100% de ingredientes naturales
+              con la ayuda de la tecnología de punta, ayudando así a mejorar la
+              calidad de vida de las personas evitando daños con agenets químicos.</p>
           </div>
         </div>
       </div>
@@ -298,7 +299,7 @@
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google-plus"></a>
-            <a href="#" class="fa fa-github"></a>
+            <a href="https://github.com/Israellh2001/Tienda_Jabones" class="fa fa-github"></a>
           </div>
         </div>
       </div>

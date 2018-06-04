@@ -88,14 +88,16 @@ nav{
 }
 
 button {
-  background: #0E952E;
+  background: #45ADA8;
   width: 80%;
-  height: 60px;
-  border-radius: 10px;
+  height: 45px;
+  border-radius:15px;
+  border:0;
+  transition: .2s ease;
 }
 
 button:hover{
-  background-color:#10AD29;
+  background-color:#67CFB5;
 }
 
 button b{

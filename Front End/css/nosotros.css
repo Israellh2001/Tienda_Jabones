@@ -132,6 +132,8 @@
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
+  border-radius: 20px;
+  overflow:hidden;
 }
 
 .seccion2 .parrafo .area{
@@ -150,12 +152,14 @@
 
 .seccion2 .parrafo p{
   padding:2%;
+  padding-top: 0;
 }
 
 .seccion2 .parrafo h3{
   padding:2%;
   padding-top: 0;
   padding-bottom: 0;
+  font-weight: 1000;
 }
 
 

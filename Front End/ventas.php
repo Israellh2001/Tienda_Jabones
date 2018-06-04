@@ -4,17 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Natural Beauty</title>
+    <title>Sakura Company</title>
     <link rel="icon" href="img/icono.ico">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/foooter.css">
     <link rel="stylesheet" href="css/ventas.css">
     <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.3.1.js"></script>
     <script src="js/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <!--CONECCION CON FIREBASE-->
@@ -69,7 +68,7 @@
           <i class="fa fa-bars fa-2x"></i>
         </div>
         <div class="logo">
-          LOGO
+          <b>Sakura Company</b>
         </div>
         <div class="menu">
           <ul>
@@ -149,6 +148,8 @@
     <!-- Menu responsivo -->
     <script type="text/javascript">
       $(document).ready(function(){
+        $('ul').addClass('white');
+        $('.menu ul li a').addClass('link2');
         $(".menuIcon").on("click",function(){
           $("nav ul").toggleClass("showing");
         });
@@ -156,61 +157,53 @@
 
       $(window).on("scroll",function(){
         if($(window).scrollTop()){
+          $('.menu ul li a').removeClass('link2');
+          $('.logo').addClass('white');
           $('nav').addClass('black');
           $('a').addClass('white');
           $('a::hover').addClass('white');
         }else{
+          $('.menu ul li a').addClass('link2');
+          $('.logo').removeClass('white');
           $('nav').removeClass('black');
           $('a').removeClass('white');
           $('a::hover').removeClass('white');
         }
       });
     </script>
--
+
     <!-- Pie de página -->
     <footer>
       <div class="footer-container">
         <div class="footer-main">
           <div class="footer-columna">
-            <h3>Contáctanos</h3>
-            <span class="fa fa-map-marker"><p>Prototipo</p></span><br>
+            <h3><b>Contáctanos</b></h3>
+            <span class="fa fa-map-marker"><p>Av Perseo 301, Primo Verdad</p><p>Inegi, 20267 Aguascalientes, Ags.</p></span><br>
             <span class="fa fa-phone"><p>(+51) 449 278 2024</p></span><br>
-            <span class="fa fa-envelope"><p>info@honeyclean.com</p></span>
+            <span class="fa fa-envelope"><p>info@sakuracompany.com</p></span>
           </div>
           <div class="footer-columna">
-            <h3>Honey Clean</h3>
-            <p>Honey Clean es una empresa...</p>
+            <h3>Sakura Company</h3>
+            <p>Nuestra empresa trabaja día con día en la creación e innovación de
+              productos de higiene personal hechos 100% de ingredientes naturales
+              con la ayuda de la tecnología de punta, ayudando así a mejorar la
+              calidad de vida de las personas evitando daños con agenets químicos.</p>
           </div>
         </div>
       </div>
       <div class="footer-copy-redes">
         <div class="main-copy-redes">
           <div class="footer-copy">
-            &copy; 2018 Honey Clean
+            &copy; 2018 Sakura Company
           </div>
           <div class="footer-redes">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google-plus"></a>
-            <a href="#" class="fa fa-github"></a>
+            <a href="https://github.com/Israellh2001/Tienda_Jabones" class="fa fa-github"></a>
           </div>
         </div>
       </div>
     </footer>
   </body>
-
-  <script type="text/javascript">/*
-    $(".article").ready(function(){
-      var tam = $("#productos article").innerHeight();
-      console.log("Tamaño: "+ tam);
-      $("#productos").height(tam*3.1);
-
-
-      $(window).resize(function(){
-        var tam2 = $("#productos").innerHeight();
-        console.log("Tamaño: "+ tam2);
-        $("#productos").height(tam+tam2*.8);
-      });
-    });*/
-  </script>
 </html>

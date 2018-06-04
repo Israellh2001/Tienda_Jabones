@@ -1,31 +1,49 @@
 .iconos{
   margin: 2%;
-  margin-left: 10%;
+  margin-left: 7%;
   margin-top: 1%;
-  width:5%;
+  width:6%;
   height: auto;
   float: left;
   position: fixed;
+  border-radius: 15px;
   background-color: white;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
 
 .contenido{
   margin-left: 15%;
 }
-.iconos a{
+
+.iconos .titulo{
+  width: 100;
+  background-color:#336D6A;
+  color: #fff;
+  padding: 5%;
+  font-size: 22px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.iconos .icos{
+  padding-bottom:4%;
+  padding-top:4%;
+}
+
+.iconos .icos a{
   padding-left: 0;
   margin: 0;
+
 }
-.iconos i{
+.iconos .icos i{
   font-size: 280%;
   color:#45ada8;
   padding-top: 7%;
 }
 
-.iconos i:hover{
-  color:#2f7673;
+.iconos img{
+  padding-bottom:4%;
+  padding-top:4%;
+  width:65%;
 }
 
 .seccion1{
